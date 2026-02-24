@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script src="https://static.line-scdn.net/liff/edge/2/sdk.js"></script>
+</head>
+<body>
+  <h1>LIFFテスト</h1>
+  <script>
+    liff.init({ liffId: "ここにLIFF ID" }).then(() => {
+      liff.getProfile().then(profile => {
+        document.body.innerHTML += "<p>" + profile.displayName + "</p>";
+      });
+    });
+  </script>
+</body>
+</html>
