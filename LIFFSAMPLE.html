@@ -15,12 +15,14 @@
         liff.login();
       } else {
         liff.getProfile().then(profile => {
-          document.getElementById("name").innerHTML =
-            "こんにちは " + profile.displayName + " さん";
+          var name = "こんにちは " + profile.displayName + " さん";
+          var userid = "あなたのuser_idは" + profile.userId + " です";
+          document.getElementById("name").innerHTML = name + userid ;
         });
       }
     });
   </script>
 </body>
 </html>
+
 
