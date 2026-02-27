@@ -17,13 +17,14 @@
         liff.getProfile().then(profile => {
           var name = "こんにちは " + profile.displayName + " さん";
           var userid = "あなたのuser_idは" + profile.userId + " です";
-          document.getElementById("name").innerHTML = name + userid ;
+          document.getElementById("name").innerHTML = name +　"<br>" + userid ;
         });
       }
     });
   </script>
 </body>
 </html>
+
 
 
 
