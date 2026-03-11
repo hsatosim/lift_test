@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>端末判定</title>
+
+<script>
+window.onload = function() {
+
+    var ua = navigator.userAgent;
+
+    // iPhone
+    if (ua.indexOf("iPhone") > -1) {
+        location.href = "https://apps.apple.com/jp/app/id1528947057";
+        return;
+    }
+
+    // Android
+    if (ua.indexOf("Android") > -1) {
+        location.href = "https://play.google.com/store/apps/details?id=com.si_m.mssanpai";
+        return;
+    }
+
+    // PC
+    document.getElementById("message").style.display = "block";
+}
+</script>
+
+</head>
+
+<body>
+
+<div id="message" style="display:none;font-size:20px;text-align:center;margin-top:100px;">
+スマートフォンからアクセスしてください
+</div>
+
+</body>
+</html>
